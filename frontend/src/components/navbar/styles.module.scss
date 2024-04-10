@@ -1,0 +1,66 @@
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(174,39,95);
+    z-index: 100;
+}
+.nav_logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav_menu ul{
+    display: flex;  
+    margin: 0;
+}
+.nav_menu ul li{
+    list-style-type: none;
+}
+.nav_menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.nav_button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    color: #fff;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.registerBtn{
+    margin-left: 15px;
+}
+.btn.white_btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white_btn:hover{
+    background: rgba(211, 255, 255, 0.5);
+}
+.nav_menu_btn{
+    display: none;
+}
+.user{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
