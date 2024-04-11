@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
+import ConfirmationModal from "../../components/confirmationModal";
 
 const ECadConversion = () => {
   const [amount, setamount] = useState(0);
-  const handleConfirmatiom = () => {
-    return console.log("open modal");
+
+  const [showModal, setShowModal] = useState(false);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setShowModal(true);
+  };
+  const handleModalSubmit = () => {
+    console.log("add logic");
+    setShowModal(false);
+  };
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -13,8 +24,7 @@ const ECadConversion = () => {
       <h2>Total Cad = 200$</h2>
       <br />
       <div>
-      <label>Enter your amount </label>
-
+        <label>Enter your amount </label>
         <input
           name='amount'
           type='number'
@@ -24,7 +34,12 @@ const ECadConversion = () => {
       </div>
 
       <br />
-      <button onClick={handleConfirmatiom}>submit</button>
+      <button onClick={handleSubmit}>submit</button>
+      <ConfirmationModal
+        isOpen={showModal}
+        onSubmit={handleModalSubmit}
+        onCancel={closeModal}
+      />
     </div>
   );
 };

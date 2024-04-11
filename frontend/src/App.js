@@ -21,29 +21,7 @@ import Home from "./pages/home";
 function App() {
   return (
     <Provider store={store}>
-      {/* <Router /> */}
       <PersistGate persistor={persistor}>
-        {/* <BrowserRouter>
-          <Routes>
-            <Route element={<PublicLayout />}>
-              <Route path={ROUTES.LOGIN} element={<Login />} />
-            </Route>
-            <Route element={<PrivateLayout />}>
-              <Route path={ROUTES.HOME} element={<Home />} />
-              <Route path={ROUTES.SUBSIDIARY_BANK}>
-                <Route
-                  path={ROUTES.SUBSIDIARY_BANK}
-                  element={<SubsidiaryBankDashboard />}
-                />
-                <Route
-                  path={ROUTES.CONVERSION_ECAD}
-                  element={<ECadConversion />}
-                ></Route>
-              </Route>
-            </Route>
-            <Route path='*' element={<Navigate to={ROUTES.LOGIN} />} />
-          </Routes>
-        </BrowserRouter> */}
         <Router />
       </PersistGate>
     </Provider>

@@ -1,14 +1,30 @@
 import React, { useState } from "react";
-import { allCountries } from "../../constants";
 import styles from "./styles.module.scss";
+import ConfirmationModal from "../../components/confirmationModal";
 
 const Transfer = () => {
   const [accountNumber, setAccountNuber] = useState();
-  const [WalletAddress, setWalletAddress] = useState();
+  const [walletAddress, setWalletAddress] = useState();
   const [email, setEmail] = useState();
 
-  const handleConfirmatiom = () => {
-    return console.log("open modal");
+  const [showModal, setShowModal] = useState(false);
+  const othersCBDC = [
+    { digitalCurrency: "Select CBDC", amount: "" },
+    { digitalCurrency: "E-EURO", amount: 20 },
+    { digitalCurrency: "E-INR", amount: 50 },
+    { digitalCurrency: "E-USD", amount: 60 },
+  ];
+
+  const handleTransfer = (event) => {
+    event.preventDefault();
+    setShowModal(true);
+  };
+  const handleModalSubmit = () => {
+    console.log("add logic");
+    setShowModal(false);
+  };
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -17,6 +33,15 @@ const Transfer = () => {
       <br />
       <br />
       <div>
+        <div>
+          <label>Select currency </label>
+          <select>
+            {othersCBDC.map((e) => (
+              <option value={e.amount}>{e.digitalCurrency}</option>
+            ))}
+            {/* <option value='otherOption'>Other option</option> */}
+          </select>
+        </div>
         <div>
           <label>Recipient account number </label>
           <input
@@ -30,8 +55,8 @@ const Transfer = () => {
           <label>Recipient Wallet address </label>
           <input
             name='amount'
-            type='number'
-            value={accountNumber}
+            type='text'
+            value={walletAddress}
             onChange={(e) => setWalletAddress(e.target.value)}
           />
         </div>
@@ -40,13 +65,18 @@ const Transfer = () => {
           <input
             name='email'
             type='text'
-            value={accountNumber}
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
       </div>
       <br />
-      <button onClick={handleConfirmatiom}>Transfer</button>
+      <button onClick={handleTransfer}>Transfer</button>
+      <ConfirmationModal
+        isOpen={showModal}
+        onSubmit={handleModalSubmit}
+        onCancel={closeModal}
+      />
     </div>
   );
 };
