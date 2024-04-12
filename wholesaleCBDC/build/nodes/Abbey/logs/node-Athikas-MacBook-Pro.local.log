@@ -1,0 +1,250 @@
+[INFO ] 2024-04-09T01:10:55,722Z [main] manifests.Manifests. - 130 attributes loaded from 167 stream(s) in 824ms, 130 saved, 2679 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-ID", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Apr-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "BoringSSL-Branch", "BoringSSL-Revision", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Jdk-Spec", "Build-Job", "Build-Number", "Build-Time", "Build-Timestamp", "Build-Version", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-NativeCode", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Class-Path", "Codebase", "Corda-DJVM-Dependencies", "Corda-Deterministic-Classpath", "Corda-Deterministic-Runtime", "Corda-Docs-Link", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Git-Revision", "Git-Url", "Gradle-Version", "Hibernate-JpaVersion", "Hibernate-VersionFamily", "Implementation-Build", "Implementation-Build-Date", "Implementation-Build-Id", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Liquibase-Package", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Major-Version", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Sealed", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "URL", "X-Compile-Source-JDK", "X-Compile-Target-JDK"]
+[INFO ] 2024-04-09T01:10:56,420Z [main] BasicInfo. - Logs can be found in                    : /Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/logs
+[INFO ] 2024-04-09T01:11:03,086Z [main] subcommands.ValidateConfigurationCli. - Actual configuration:
+{
+    "additionalNodeInfoPollingFrequencyMsec" : 5000,
+    "additionalP2PAddresses" : [],
+    "baseDirectory" : "/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey",
+    "blacklistedAttachmentSigningKeys" : [],
+    "certificateChainCheckPolicies" : [],
+    "cordappSignerKeyFingerprintBlacklist" : [
+        "56CA54E803CB87C8472EBD3FBC6A2F1876E814CEEBF74860BD46997F40729367",
+        "83088052AF16700457AE2C978A7D8AC38DD6A7C713539D00B897CD03A5E5D31D",
+        "6F6696296C3F58B55FB6CA865A025A3A6CC27AD17C4AFABA1E8EF062E0A82739"
+    ],
+    "crlCheckArtemisServer" : false,
+    "crlCheckSoftFail" : true,
+    "dataSourceProperties" : "*****",
+    "database" : {
+        "exportHibernateJMXStatistics" : false,
+        "mappedSchemaCacheSize" : 100
+    },
+    "detectPublicIp" : false,
+    "devMode" : true,
+    "emailAddress" : "admin@company.com",
+    "extraNetworkMapKeys" : [],
+    "flowExternalOperationThreadPoolSize" : 8,
+    "flowMonitorPeriodMillis" : {
+        "nanos" : 0,
+        "seconds" : 60
+    },
+    "flowMonitorSuspensionLoggingThresholdMillis" : {
+        "nanos" : 0,
+        "seconds" : 60
+    },
+    "flowTimeout" : {
+        "backoffBase" : 1.8,
+        "maxRestartCount" : 6,
+        "timeout" : {
+            "nanos" : 0,
+            "seconds" : 30
+        }
+    },
+    "jarDirs" : [],
+    "jmxReporterType" : "JOLOKIA",
+    "keyStorePassword" : "*****",
+    "lazyBridgeStart" : true,
+    "localShellAllowExitInSafeMode" : true,
+    "localShellUnsafe" : false,
+    "myLegalName" : "O=Abbey, L=London, C=GB",
+    "networkParameterAcceptanceSettings" : {
+        "autoAcceptEnabled" : true,
+        "excludedAutoAcceptableParameters" : []
+    },
+    "noLocalShell" : false,
+    "p2pAddress" : "localhost:10008",
+    "quasarExcludePackages" : [],
+    "reloadCheckpointAfterSuspend" : false,
+    "rpcSettings" : {
+        "address" : "localhost:10009",
+        "adminAddress" : "localhost:10049",
+        "standAloneBroker" : false,
+        "useSsl" : false
+    },
+    "rpcUsers" : [],
+    "security" : {
+        "authService" : {
+            "dataSource" : {
+                "passwordEncryption" : "NONE",
+                "type" : "INMEMORY",
+                "users" : [
+                    {
+                        "ignoresFallbacks" : false,
+                        "resolved" : true,
+                        "value" : {
+                            "loadFactor" : 0.75,
+                            "modCount" : 3,
+                            "size" : 3,
+                            "table" : {},
+                            "threshold" : 3
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "trustStorePassword" : "*****",
+    "useTestClock" : false,
+    "verifierType" : "InMemory"
+}
+
+[INFO ] 2024-04-09T01:11:03,230Z [main] internal.Node. - Vendor: Corda Open Source
+[INFO ] 2024-04-09T01:11:03,230Z [main] internal.Node. - Release: 4.8
+[INFO ] 2024-04-09T01:11:03,230Z [main] internal.Node. - Platform Version: 10
+[INFO ] 2024-04-09T01:11:03,230Z [main] internal.Node. - Revision: d7a710c80300d1d9b79513a5d8d137361a2599a8
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - PID: 7868
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - Main class: /Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-node-4.8.jar
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - CommandLine Args: -Xmx512m -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+CrashOnOutOfMemoryError -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006 -javaagent:drivers/jolokia-jvm-1.6.0-agent.jar=port=7006,logHandlerClass=net.corda.node.JolokiaSlf4jAdapter -javaagent:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/quasar-core-0.7.13_r3.jar=x(antlr**;bftsmart**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;kotlin**;net.corda.djvm**;djvm**;net.bytebuddy**;net.i2p**;org.apache**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**;com.lmax**;picocli**;liquibase**;com.github.benmanes**;org.json**;org.postgresql**;nonapi.io.github.classgraph**)l(net.corda.djvm.**;net.corda.core.serialization.internal.**) -Dvisualvm.display.name=Corda -Djava.library.path=/Users/athikafatima/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8 -Dcapsule.app=net.corda.node.Corda_4.8 -Dname=Abbey -Dcapsule.dir=/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8 -Dcapsule.jar=/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/corda.jar
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - bootclasspath: /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/cat.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/classes
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - classpath: /Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/corda.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-shell-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-rpc-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-node-api-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-tools-cliutils-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-common-configuration-parsing-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-common-validation-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-common-logging-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-confidential-identities-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/log4j-slf4j-impl-2.13.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/log4j-web-2.13.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jul-to-slf4j-1.7.30.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-serialization-djvm-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-djvm-1.1.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-jackson-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-serialization-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-core-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-stdlib-jdk8-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jackson-module-kotlin-2.9.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-reflect-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jansi-1.18.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/metrics-new-relic-1.1.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/quasar-core-0.7.13_r3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/guava-28.0-jre.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/caffeine-2.7.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/disruptor-3.4.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/commons-collections4-4.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-amqp-protocol-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-server-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-jdbc-store-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-jms-client-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-core-client-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-journal-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-commons-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-core-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-config-ogdl-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/commons-beanutils-1.9.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jcabi-manifests-1.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/metrics-jmx-4.1.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/config-1.3.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-node-djvm-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/h2-1.4.199.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/HikariCP-3.3.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/hibernate-java8-5.4.3.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/hibernate-core-5.4.3.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/okhttp-3.14.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/picocli-3.9.6.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/library-master-v1.1-beta-g6215ec8-87.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/commons-codec-1.13.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/copycat-client-1.2.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/copycat-server-1.2.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/catalyst-netty-1.1.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jolokia-jvm-1.6.1-agent.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-tcnative-boringssl-static-2.0.29.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-stdlib-jre8-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-handler-proxy-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/proton-j-0.33.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/classgraph-4.8.90.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kryo-serializers-0.43.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kryo-4.0.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/liquibase-core-3.6.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jackson-datatype-jsr310-2.9.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jackson-databind-2.9.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/liquibase-slf4j-2.0.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/crash.connectors.ssh-1.7.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/crash.shell-1.7.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/log4j-core-2.13.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/commons-io-2.6.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jcabi-log-0.14.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/metrics-core-4.1.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-cache-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-crypto-hash-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-crypto-cipher-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-config-core-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-event-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-crypto-core-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/shiro-lang-1.4.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/copycat-protocol-1.2.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/catalyst-transport-1.1.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jcl-over-slf4j-1.7.30.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/mina-core-2.0.16.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/catalyst-concurrent-1.1.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/catalyst-serializer-1.1.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/catalyst-buffer-1.1.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/catalyst-common-1.1.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/slf4j-api-1.7.30.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/log4j-api-2.13.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-stdlib-jdk7-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-stdlib-jre7-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-stdlib-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/failureaccess-1.0.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jsr305-3.0.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/checker-qual-2.8.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/error_prone_annotations-2.3.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/j2objc-annotations-1.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/animal-sniffer-annotations-1.17.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/commons-collections-3.2.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-native-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/hibernate-commons-annotations-5.1.0.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jboss-logging-3.3.2.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/artemis-selector-2.6.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-codec-http-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-handler-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-transport-native-epoll-4.1.46.Final-linux-x86_64.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-transport-native-kqueue-4.1.46.Final-osx-x86_64.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-codec-socks-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-codec-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-transport-native-unix-common-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-transport-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-buffer-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-resolver-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/netty-common-4.1.46.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/geronimo-json_1.0_spec-1.0-alpha-1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jgroups-3.6.13.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/johnzon-core-0.9.5.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-deserializers-djvm-4.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/javax.persistence-api-2.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/javassist-3.24.0-GA.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/byte-buddy-1.9.10.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/antlr-2.7.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jandex-2.0.5.Final.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/classmate-1.3.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jaxb-runtime-2.3.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jaxb-api-2.3.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/javax.activation-api-1.2.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/dom4j-2.1.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/okio-1.17.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jolokia-core-1.6.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/json-simple-1.1.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/newrelic-api-3.10.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/LatencyUtils-2.0.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/HdrHistogram-2.1.9.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/reflectasm-1.11.3.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/asm-analysis-5.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/asm-commons-5.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/asm-util-5.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/asm-tree-5.2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/asm-7.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/rxjava-1.3.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/commons-lang3-3.9.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/eddsa-0.3.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/bcpkix-jdk15on-1.68.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/bcprov-jdk15on-1.68.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/snappy-0.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/minlog-1.3.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/objenesis-2.5.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jackson-dataformat-yaml-2.9.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/snakeyaml-1.23.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jackson-annotations-2.9.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jackson-core-2.9.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/crash.cli-1.7.4.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/groovy-all-1.8.9.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/sshd-pam-0.11.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/sshd-core-2.3.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/kotlin-stdlib-common-1.2.71.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/annotations-13.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/txw2-2.3.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/istack-commons-runtime-3.0.7.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/stax-ex-1.8.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/FastInfoset-1.2.15.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/geronimo-jms_2.0_spec-1.0-alpha-2.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/sshd-common-2.3.0.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/jpam-1.1.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/corda-node-4.8.jar:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/drivers/jolokia-jvm-1.6.0-agent.jar:drivers/jolokia-jvm-1.6.0-agent.jar:/Users/athikafatima/.capsule/apps/net.corda.node.Corda_4.8/quasar-core-0.7.13_r3.jar
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - VM OpenJDK 64-Bit Server VM Azul Systems, Inc. 25.402-b06
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - Machine: Athikas-MacBook-Pro.local
+[INFO ] 2024-04-09T01:11:03,233Z [main] internal.Node. - Working Directory: /Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey
+[INFO ] 2024-04-09T01:11:03,238Z [main] internal.Node. - Debug port: 5006
+[INFO ] 2024-04-09T01:11:03,238Z [main] internal.Node. - Starting as node on localhost:10008
+[INFO ] 2024-04-09T01:11:03,942Z [main] cordapp.JarScanningCordappLoader. - Looking for CorDapps in [/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps]
+[INFO ] 2024-04-09T01:11:03,980Z [main] cordapp.JarScanningCordappLoader. - Loading CorDapps from RestrictedURL(url=file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/tokens-workflows-1.2.5.jar, rootPackageName=null), RestrictedURL(url=file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/tokens-contracts-1.2.5.jar, rootPackageName=null), RestrictedURL(url=file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/ci-workflows-1.1.1.jar, rootPackageName=null), RestrictedURL(url=file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/contracts-1.0.jar, rootPackageName=null), RestrictedURL(url=file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/workflows-1.0.jar, rootPackageName=null)
+[INFO ] 2024-04-09T01:11:04,010Z [main] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/tokens-workflows-1.2.5.jar
+[INFO ] 2024-04-09T01:11:08,134Z [main] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/tokens-contracts-1.2.5.jar
+[INFO ] 2024-04-09T01:11:08,667Z [main] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/ci-workflows-1.1.1.jar
+[INFO ] 2024-04-09T01:11:08,882Z [main] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/contracts-1.0.jar
+[INFO ] 2024-04-09T01:11:08,918Z [main] cordapp.JarScanningCordappLoader. - Scanning CorDapp in file:/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/workflows-1.0.jar
+[INFO ] 2024-04-09T01:11:12,949Z [main] internal.Node. - MessagingService active change to: false
+[INFO ] 2024-04-09T01:11:14,082Z [main] internal.Node. - Flow external operation executor has a max of 8 threads
+[WARN ] 2024-04-09T01:11:14,395Z [main] internal.Node. - This node is running in development mode! 👩‍💻   This is not safe for production deployment.
+[INFO ] 2024-04-09T01:11:15,049Z [main] internal.Node. - Node starting up ...
+[INFO ] 2024-04-09T01:11:15,148Z [main] internal.KeyStoreHandler. - Loaded trusted root certificate: DL7fwxLm5xbiMD8adUuYTsPZHAict46Ng4w6RNcySt5vAw, alias: cordarootca
+[INFO ] 2024-04-09T01:11:15,516Z [main] internal.KeyStoreHandler. - Loaded node identity key: DL9dX69aueEERfef312YA37R7FESQUKnyMS8AofnZEENSX, alias: identity-private-key
+[INFO ] 2024-04-09T01:11:21,336Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialIssueTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialIssueTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,337Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialMoveFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialMoveFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,338Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialMoveNonFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialMoveNonFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,339Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialRedeemFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.ConfidentialRedeemFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,340Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.CreateEvolvableTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.CreateEvolvableTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,340Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.IssueTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.IssueTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,343Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.MoveFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.MoveFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,364Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.MoveNonFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.MoveNonFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,366Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.RedeemFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.RedeemFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,368Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.RedeemNonFungibleTokens to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.RedeemNonFungibleTokensHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,368Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.flows.rpc.UpdateEvolvableToken to initiate com.r3.corda.lib.tokens.workflows.flows.rpc.UpdateEvolvableTokenHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,372Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.internal.flows.distribution.RequestAdditionToDistributionList$Initiator to initiate com.r3.corda.lib.tokens.workflows.internal.flows.distribution.RequestAdditionToDistributionList$Responder (version 1)
+[INFO ] 2024-04-09T01:11:21,373Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.tokens.workflows.internal.flows.distribution.UpdateDistributionListFlow to initiate com.r3.corda.lib.tokens.workflows.internal.flows.distribution.UpdateDistributionListFlowHandler (version 1)
+[INFO ] 2024-04-09T01:11:21,375Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.ci.workflows.RequestKeyForUUIDInitiator to initiate com.r3.corda.lib.ci.workflows.RequestKeyForUUIDResponder (version 1)
+[INFO ] 2024-04-09T01:11:21,376Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.ci.workflows.RequestKey to initiate com.r3.corda.lib.ci.workflows.RequestKeyResponder (version 1)
+[INFO ] 2024-04-09T01:11:21,403Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.ci.workflows.SyncKeyMappingInitiator to initiate com.r3.corda.lib.ci.workflows.SyncKeyMappingResponder (version 1)
+[INFO ] 2024-04-09T01:11:21,406Z [main] internal.NodeFlowManager. - Registered com.r3.corda.lib.ci.workflows.VerifyAndAddKey to initiate com.r3.corda.lib.ci.workflows.VerifyAndAddKeyResponder (version 1)
+[INFO ] 2024-04-09T01:11:21,467Z [main] internal.Node. - Setting unsafe users as: [user1]
+[INFO ] 2024-04-09T01:11:21,683Z [main] shell.InteractiveShell. - launchShell: User=internalShell perm=[]
+[INFO ] 2024-04-09T01:11:21,683Z [main] shell.InteractiveShell. - Shell: PermitExit= true, UNSAFELOCAL=false
+[INFO ] 2024-04-09T01:11:22,037Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+[INFO ] 2024-04-09T01:11:22,038Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+[INFO ] 2024-04-09T01:11:22,042Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,046Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+[INFO ] 2024-04-09T01:11:22,050Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+[INFO ] 2024-04-09T01:11:22,053Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+[INFO ] 2024-04-09T01:11:22,054Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+[INFO ] 2024-04-09T01:11:22,058Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,060Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,126Z [main] ssh.SSHPlugin. - Could not boot SSHD due to missing due to missing port configuration
+[INFO ] 2024-04-09T01:11:22,127Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+[INFO ] 2024-04-09T01:11:22,127Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+[INFO ] 2024-04-09T01:11:22,127Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,187Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+[INFO ] 2024-04-09T01:11:22,188Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+[INFO ] 2024-04-09T01:11:22,333Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+[INFO ] 2024-04-09T01:11:22,344Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,349Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,349Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=CordaAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2024-04-09T01:11:22,353Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=CordaDisconnectPlugin,interface=DisconnectPlugin]
+[INFO ] 2024-04-09T01:11:31,014Z [main] internal.Node. - Loaded network parameters: NetworkParameters {
+      minimumPlatformVersion=10
+      notaries=[NotaryInfo(identity=O=Notary, L=London, C=GB, validating=false)]
+      maxMessageSize=10485760
+      maxTransactionSize=524288000
+      whitelistedContractImplementations {
+        
+      }
+      eventHorizon=PT720H
+      packageOwnership {
+        
+      }
+      modifiedTime=2024-04-06T04:32:35Z
+      epoch=1
+  }
+[INFO ] 2024-04-09T01:11:31,133Z [main] hikari.HikariDataSource. - HikariPool-1 - Starting...
+[INFO ] 2024-04-09T01:11:32,716Z [main] hikari.HikariDataSource. - HikariPool-1 - Start completed.
+[INFO ] 2024-04-09T01:11:45,263Z [main] jvm.JdbcExecutor. - SELECT MD5SUM FROM PUBLIC.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL
+[INFO ] 2024-04-09T01:11:45,286Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOG
+[INFO ] 2024-04-09T01:11:45,287Z [main] changelog.StandardChangeLogHistoryService. - Reading from PUBLIC.DATABASECHANGELOG
+[INFO ] 2024-04-09T01:11:45,287Z [main] jvm.JdbcExecutor. - SELECT * FROM PUBLIC.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[INFO ] 2024-04-09T01:11:45,328Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK
+[INFO ] 2024-04-09T01:11:45,348Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK
+[INFO ] 2024-04-09T01:11:46,715Z [main] jvm.JdbcExecutor. - SELECT MD5SUM FROM PUBLIC.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL
+[INFO ] 2024-04-09T01:11:46,723Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOG
+[INFO ] 2024-04-09T01:11:46,723Z [main] changelog.StandardChangeLogHistoryService. - Reading from PUBLIC.DATABASECHANGELOG
+[INFO ] 2024-04-09T01:11:46,726Z [main] jvm.JdbcExecutor. - SELECT * FROM PUBLIC.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[INFO ] 2024-04-09T01:11:46,742Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK
+[INFO ] 2024-04-09T01:11:46,743Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK
+[INFO ] 2024-04-09T01:11:46,884Z [main] internal.Node. - Connected to H2 database.
+[INFO ] 2024-04-09T01:11:47,322Z [main] persistence.HibernateConfiguration. - Init HibernateConfiguration for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), DistributionRecordSchemaV1(name=com.r3.corda.lib.tokens.workflows.internal.schemas.DistributionRecordSchema, version=1), FungibleTokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.internal.schemas.FungibleTokenSchema, version=1), NonFungibleTokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.internal.schemas.NonFungibleTokenSchema, version=1), TokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.schemas.TokenSchema, version=1)]
+[INFO ] 2024-04-09T01:11:47,332Z [main] factory.BaseSessionFactoryFactory. - Creating session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), DistributionRecordSchemaV1(name=com.r3.corda.lib.tokens.workflows.internal.schemas.DistributionRecordSchema, version=1), FungibleTokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.internal.schemas.FungibleTokenSchema, version=1), NonFungibleTokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.internal.schemas.NonFungibleTokenSchema, version=1), TokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.schemas.TokenSchema, version=1)]
+[INFO ] 2024-04-09T01:11:54,917Z [main] factory.BaseSessionFactoryFactory. - Created session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), DistributionRecordSchemaV1(name=com.r3.corda.lib.tokens.workflows.internal.schemas.DistributionRecordSchema, version=1), FungibleTokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.internal.schemas.FungibleTokenSchema, version=1), NonFungibleTokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.internal.schemas.NonFungibleTokenSchema, version=1), TokenSchemaV1(name=com.r3.corda.lib.tokens.contracts.schemas.TokenSchema, version=1)]
+[INFO ] 2024-04-09T01:11:56,979Z [main] network.NetworkMapUpdater. - Auto-accept enabled for network parameter changes which modify only: [epoch, modifiedTime, packageOwnership, whitelistedContractImplementations]
+[INFO ] 2024-04-09T01:11:57,202Z [main] security.RPCSecurityManagerImpl. - Constructing realm from list of users in config [User(user1, permissions=[ALL])]
+[INFO ] 2024-04-09T01:11:57,273Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10005], legalIdentitiesAndCerts=[O=UK Mint, L=London, C=GB], platformVersion=10, serial=1712377948629), owningKey=DLCbaeRyAoiQk6VJMVspwTEPRjoWfqde5a8rkYdN576PNE
+[INFO ] 2024-04-09T01:11:57,274Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2024-04-09T01:11:57,292Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10012], legalIdentitiesAndCerts=[O=HSBC, L=London, C=GB], platformVersion=10, serial=1712377942536), owningKey=DLCEdh1u8jWBYdqeaNgsxteMYt7Hf5bjgbndCmjHBxttEp
+[INFO ] 2024-04-09T01:11:57,292Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2024-04-09T01:11:57,306Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10008], legalIdentitiesAndCerts=[O=Abbey, L=London, C=GB], platformVersion=10, serial=1712377946756), owningKey=DL9dX69aueEERfef312YA37R7FESQUKnyMS8AofnZEENSX
+[INFO ] 2024-04-09T01:11:57,306Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2024-04-09T01:11:57,320Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10002], legalIdentitiesAndCerts=[O=Notary, L=London, C=GB], platformVersion=10, serial=1712377949305), owningKey=DLEoBArD6Xk1T4Jm2fDZYEZb8rjWhiVE7b8drsKVGB3pBG
+[INFO ] 2024-04-09T01:11:57,320Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2024-04-09T01:11:59,316Z [main] BasicInfo. - Advertised P2P messaging addresses      : localhost:10008
+[INFO ] 2024-04-09T01:11:59,404Z [main] BasicInfo. - RPC connection address                  : localhost:10009
+[INFO ] 2024-04-09T01:11:59,404Z [main] BasicInfo. - RPC admin connection address            : localhost:10049
+[INFO ] 2024-04-09T01:12:02,975Z [main] messaging.ArtemisMessagingServer. - P2P messaging server listening on 0.0.0.0:10008
+[INFO ] 2024-04-09T01:12:03,772Z [main] internal.ArtemisMessagingClient. - Connecting to message broker: localhost:10008
+[INFO ] 2024-04-09T01:12:05,955Z [main] internal.ArtemisMessagingClient. - Connecting to message broker: localhost:10008
+[INFO ] 2024-04-09T01:12:06,217Z [main] bridging.BridgeControlListener. - Found inboxes: [p2p.inbound.DL9dX69aueEERfef312YA37R7FESQUKnyMS8AofnZEENSX]
+[INFO ] 2024-04-09T01:12:06,425Z [main] messaging.P2PMessagingClient. - Connecting to message broker: localhost:10008
+[INFO ] 2024-04-09T01:12:06,846Z [Thread-4 (ActiveMQ-client-global-threads)] bridging.BridgeControlListener. - Received bridge control message NodeToBridgeSnapshot(nodeIdentity=O=Abbey, L=London, C=GB, inboxQueues=[p2p.inbound.DL9dX69aueEERfef312YA37R7FESQUKnyMS8AofnZEENSX], sendQueues=[])
+[INFO ] 2024-04-09T01:12:06,860Z [Thread-4 (ActiveMQ-client-global-threads)] bridging.BridgeControlListener. - Added inbox: [p2p.inbound.DL9dX69aueEERfef312YA37R7FESQUKnyMS8AofnZEENSX]. Current inboxes: [p2p.inbound.DL9dX69aueEERfef312YA37R7FESQUKnyMS8AofnZEENSX].
+[INFO ] 2024-04-09T01:12:07,364Z [main] ClassloaderUtils. - Contracts loading for '/var/folders/hv/3mfynt4129z_2z_6ry6fx1dh0000gn/T/attachment8298811102880344376.jar' took 39 msec
+[INFO ] 2024-04-09T01:12:07,532Z [main] internal.Node. - Installed com.r3.corda.lib.tokens.selection.memory.services.VaultMigratorService Corda service
+[INFO ] 2024-04-09T01:12:07,638Z [main] cordapp.CordappConfigFileProvider. - No config found for cordapp tokens-workflows-1.2.5 in [/Users/athikafatima/Desktop/cbdc/wholesaleCBDC/build/nodes/Abbey/cordapps/config]
+[WARN ] 2024-04-09T01:12:07,645Z [main] inMemoryConfigSelectionLogger. - Did not detect a configuration for InMemory selection - enabling memory usage for token indexing. Please set stateSelection.inMemory.enabled to "false" to disable this
+[WARN ] 2024-04-09T01:12:07,648Z [main] inMemoryConfigSelectionLogger. - No indexing method specified. Indexes will be created at run-time for each invocation of selectTokens
+[INFO ] 2024-04-09T01:12:07,648Z [main] inMemoryConfigSelectionLogger. - Found in memory token selection configuration with values indexing strategy: [], cacheSize: 1024
+[WARN ] 2024-04-09T01:12:07,904Z [main] vault.NodeVaultService. - trackBy is called with an already existing, open DB transaction. As a result, there might be states missing from both the snapshot and observable, included in the returned data feed, because of race conditions.
+[WARN ] 2024-04-09T01:12:11,306Z [main] inMemoryConfigSelectionLogger. - Did not detect a configuration for InMemory selection - enabling memory usage for token indexing. Please set stateSelection.inMemory.enabled to "false" to disable this
+[WARN ] 2024-04-09T01:12:11,310Z [main] inMemoryConfigSelectionLogger. - No indexing method specified. Indexes will be created at run-time for each invocation of selectTokens
+[INFO ] 2024-04-09T01:12:11,310Z [main] inMemoryConfigSelectionLogger. - Found in memory token selection configuration with values indexing strategy: [], cacheSize: 1024
+[INFO ] 2024-04-09T01:12:11,389Z [main] internal.Node. - Installed com.r3.corda.lib.tokens.selection.memory.services.VaultWatcherService Corda service
+[INFO ] 2024-04-09T01:12:14,472Z [main] statemachine.SingleThreadedStateMachineManager. - Node ready, info: NodeInfo(addresses=[localhost:10008], legalIdentitiesAndCerts=[O=Abbey, L=London, C=GB], platformVersion=10, serial=1712377946756)
+[INFO ] 2024-04-09T01:12:14,707Z [Node thread-1] internal.Node. - Registering JMX reporter:
+[INFO ] 2024-04-09T01:12:14,709Z [Node thread-1] internal.Node. - Registering Jolokia JMX reporter:
+[INFO ] 2024-04-09T01:12:14,717Z [main] BasicInfo. - Loaded 5 CorDapp(s)                     : Workflow CorDapp: Token SDK Workflows version 2 by vendor R3 with licence Apache 2, Contract CorDapp: Token SDK Contracts version 2 by vendor R3 with licence Apache 2, Workflow CorDapp: Confidential Identities Workflows version 2 by vendor Corda Open Source with licence Apache License, Version 2.0, Contract CorDapp: cbdc CorDapp version 1 by vendor Corda Open Source with licence Apache License, Version 2.0, Workflow CorDapp: CBDC Flows version 1 by vendor Corda Open Source with licence Apache License, Version 2.0
+[INFO ] 2024-04-09T01:12:14,728Z [main] BasicInfo. - Node for "Abbey" started up and registered in 86.78 sec
+[INFO ] 2024-04-09T01:12:14,733Z [main] rpc.RPCServer. - Starting RPC server with configuration RPCServerConfiguration(rpcThreadPoolSize=4, reapInterval=PT1S, deduplicationCacheExpiry=PT24H)
+[INFO ] 2024-04-09T01:12:15,307Z [main] BasicInfo. - Running P2PMessaging loop
+[INFO ] 2024-04-09T01:12:15,551Z [main] messaging.P2PMessagingClient. - Status change to true
+[INFO ] 2024-04-09T01:12:15,555Z [main] internal.Node. - MessagingService active change to: true
+[INFO ] 2024-04-09T01:12:16,484Z [NodeLifecycleEventsDistributor-0] services.VaultWatcherService. - Starting async token loading from vault
+[INFO ] 2024-04-09T01:12:16,556Z [pool-16-thread-1] services.VaultWatcherService. - publishing 1 to async state loading callback
+[INFO ] 2024-04-09T01:12:16,559Z [pool-16-thread-1] services.VaultWatcherService. - received token vault update with 0 consumed states and: 1 produced states
+[INFO ] 2024-04-09T01:12:16,560Z [pool-16-thread-1] services.VaultWatcherService. - received token vault update with 0 consumed states and: 0 produced states
+[INFO ] 2024-04-09T01:12:16,560Z [pool-16-thread-1] services.VaultWatcherService. - finished token loading
+[WARN ] 2024-04-09T01:13:40,052Z [Command line shell processor] jline.JLineProcessor. - Input/output error
+java.io.IOException: Input/output error
+	at java.io.FileInputStream.read0(Native Method) ~[?:1.8.0_402]
+	at java.io.FileInputStream.read(FileInputStream.java:207) ~[?:1.8.0_402]
+	at org.crsh.console.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:166) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:135) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:243) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.internal.InputStreamReader.read(InputStreamReader.java:257) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.internal.InputStreamReader.read(InputStreamReader.java:194) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2147) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2137) ~[crash.shell-1.7.4.jar:?]
+	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:115) ~[crash.shell-1.7.4.jar:?]
+	at net.corda.tools.shell.InteractiveShell$runLocalShell$3.invoke(InteractiveShell.kt:195) ~[corda-shell-4.8.jar:?]
+	at net.corda.tools.shell.InteractiveShell$runLocalShell$3.invoke(InteractiveShell.kt:93) ~[corda-shell-4.8.jar:?]
+	at kotlin.concurrent.ThreadsKt$thread$thread$1.run(Thread.kt:30) ~[kotlin-stdlib-1.2.71.jar:1.2.71-release-64 (1.2.71)]
