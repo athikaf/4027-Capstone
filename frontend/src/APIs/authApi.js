@@ -1,7 +1,7 @@
 // Mock user data
 const userData = {
   _id: { $oid: "658c802703f91619a7b80cbc" },
-  name: "Test",
+  name: "Nikita",
   email: "test@gmail.com",
   password: "test",
   __v: { $numberInt: "0" },

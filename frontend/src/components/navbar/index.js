@@ -4,7 +4,7 @@ import cx from "classnames";
 import { useSelector, useDispatch } from "react-redux";
 import { handleLogout } from "../../Redux/actions";
 import { Navigate, useNavigate } from "react-router-dom";
-
+import fullLogo from "../../assets/full-logo.png";
 
 const Navbar = () => {
   const isLoggedIn = useSelector((state) => state?.auth?.data);
@@ -19,13 +19,16 @@ const Navbar = () => {
   return (
     <div>
       <nav className={styles.nav}>
-        <div className={styles.nav_logo}>
-          <p>LOGO </p>
+        <div className={styles.nav_logo} onClick={()=>navigate('/')}>
+          <img src={fullLogo} alt='full' style={{ width: "200px" }} />
         </div>
         <div className={styles.nav_menu} id='navMenu'>
           <ul>
             <li>
-              <a  onClick={()=>navigate("./subsidiary_bank")} className={styles.link}>
+              <a
+                onClick={() => navigate("./subsidiary_bank")}
+                className={styles.link}
+              >
                 Dashboard
               </a>
             </li>

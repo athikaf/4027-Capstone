@@ -9,10 +9,17 @@
     background: rgba(174,39,95);
     z-index: 100;
 }
-.nav_logo p{
+.nav_logo{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+ p{
     color: white;
     font-size: 25px;
     font-weight: 600;
+}
 }
 .nav_menu ul{
     display: flex;  

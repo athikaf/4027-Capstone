@@ -7,6 +7,7 @@ import { PrivateLayout, PublicLayout } from "./layout";
 import ECadConversion from "../pages/eCadConversion";
 import OtherCbdc from "../pages/otherCbdc";
 import Transfer from "../pages/transfer";
+import Redeem from "../pages/redeem";
 
 const Router = () => {
   return (
@@ -22,6 +23,8 @@ const Router = () => {
               element={<SubsidiaryBankDashboard />}
             />
             <Route path={ROUTES.CONVERSION_ECAD} element={<ECadConversion />} />
+            <Route path={ROUTES.REDEEM} element={<Redeem />} />
+
             <Route path={ROUTES.OTHER_CBDC} element={<OtherCbdc />} />
             <Route path={ROUTES.TRANSFER} element={<Transfer />} />
           </Route>

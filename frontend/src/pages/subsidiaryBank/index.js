@@ -32,6 +32,9 @@ const SubsidiaryBankDashboard = () => {
   const handleConvertToOtherCBDC = () => {
     return navigate(`${ROUTES.SUBSIDIARY_BANK}/${ROUTES.OTHER_CBDC}`);
   };
+  const handleRedeem = () => {
+    return navigate(`${ROUTES.SUBSIDIARY_BANK}/${ROUTES.REDEEM}`);
+  };
   const handelTransferCBDC = () =>{
     navigate(`${ROUTES.TRANSFER}`);
   }
@@ -135,7 +138,7 @@ const SubsidiaryBankDashboard = () => {
         </span>
         <br />
         <button onClick={handleConvertECad}>Convert to e-cad</button>
-        <button onClick={() => alert("This section is under progress")}>
+        <button onClick={handleRedeem}>
           Redeem
         </button>
       </div>
