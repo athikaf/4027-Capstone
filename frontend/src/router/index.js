@@ -8,8 +8,13 @@ import ECadConversion from "../pages/eCadConversion";
 import OtherCbdc from "../pages/otherCbdc";
 import Transfer from "../pages/transfer";
 import Redeem from "../pages/redeem";
+import { useSelector } from "react-redux";
+import CentralBankDashboard from "../pages/centralBank";
 
 const Router = () => {
+  const isLoggedIn = useSelector((state) => state?.auth?.data);
+  const userData = useSelector((state) => state?.auth?.user);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -28,6 +33,7 @@ const Router = () => {
             <Route path={ROUTES.OTHER_CBDC} element={<OtherCbdc />} />
             <Route path={ROUTES.TRANSFER} element={<Transfer />} />
           </Route>
+          <Route path='/central_bank' element={<CentralBankDashboard />} />
         </Route>
         <Route path='*' element={<Navigate to={ROUTES.LOGIN} />} />
       </Routes>

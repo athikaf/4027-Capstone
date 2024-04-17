@@ -26,7 +26,7 @@ const CentralBankDashboard = () => {
               title='Click to collapse account table for Banking'
               onClick={toggleTableVisibility}
             >
-              Banking 
+             Transections
             </a>
             <span className='other'></span>
           </h3>

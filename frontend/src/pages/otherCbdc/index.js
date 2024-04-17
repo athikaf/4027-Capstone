@@ -39,7 +39,7 @@ const OtherCbdc = () => {
       <label>Select country </label>
         <select>
           {allCountries.map((e) => (
-            <option value={e.code}>{e.name}</option>
+            <option value={e.currency_code}>{e.country}</option>
           ))}
           {/* <option value='otherOption'>Other option</option> */}
         </select>

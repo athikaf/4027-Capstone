@@ -6,6 +6,8 @@ import Navbar from "../components/navbar";
 
 export const PrivateLayout = () => {
   const isLoggedIn = useSelector((state) => state?.auth?.data);
+const userData = useSelector((state)=> state?.auth?.user)
+
   
   console.log(isLoggedIn, "isLogedin");
   return isLoggedIn ? (
@@ -20,6 +22,8 @@ export const PrivateLayout = () => {
 
 export const PublicLayout = () => {
   const isLoggedIn = useSelector((state) => state?.auth?.data);
+  const user = useSelector((state) => state?.auth?.user);
+
   console.log("fddfff", isLoggedIn);
-  return isLoggedIn ? <Navigate to={ROUTES.SUBSIDIARY_BANK} /> : <Outlet />;
+  return isLoggedIn ?(user?.name !== "Admin"  ?<Navigate to={ROUTES.SUBSIDIARY_BANK} /> : <Navigate to={"/central_bank"} />)  : <Outlet />;
 };

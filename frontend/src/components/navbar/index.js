@@ -44,7 +44,7 @@ const Navbar = () => {
           <ul>
             <li>
               <a
-                onClick={() => navigate("/subsidiary_bank")}
+                onClick={() => navigate("/")}
                 className={styles.link}
               >
                 Dashboard

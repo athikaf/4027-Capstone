@@ -68,6 +68,7 @@
     transition: 0.3s ease;
     color: #fff;
     display: none;
+    margin: 10px;
   }
   .btn:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -138,6 +139,7 @@
     .nav_menu ul li {
     //   padding: 15px 0;
       margin: 0;
+      height: 40px;
     }
    
     .nav_menu_btn {
@@ -155,6 +157,7 @@
         transition: 0.3s ease;
         color: #fff;
         display: block;
+        margin-top: 40px;
       }
     .nav_menu_btn .menu-icon {
       width: 45px;
