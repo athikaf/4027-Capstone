@@ -1,21 +1,4 @@
 
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-// * {
-// 	box_sizing: border_box;
-// }
-
-// body {
-// 	background: #f6f5f7;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	flex-direction: column;
-// 	font_family: 'Montserrat', sans_serif;
-// 	height: 100vh;
-// 	margin: _20px 0 50px;
-// }
-
 
 .section{
 	background: #f6f5f7;
@@ -260,3 +243,64 @@
     color: #3c97bf;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+	.container {
+	  max-width: 90%;
+	}
+  
+	.form_container {
+	  width: 100%;
+	}
+  
+	.sign_in_container,
+	.sign_up_container {
+	  width: 100%;
+	}
+  
+	.overlay_container {
+	  left: 0;
+	  width: 100%;
+	  display: none;
+	}
+  
+	.overlay {
+	  width: 100%;
+	}
+  
+	.overlay_panel {
+	  width: 100%;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.container {
+	  min-height: 100vh;
+	  margin: 0;
+	  border-radius: 0;
+	}
+  
+	.form_container {
+	  width: 100%;
+	}
+  
+	.sign_in_container,
+	.sign_up_container {
+	  width: 100%;
+	}
+  
+	.overlay_container {
+	  left: 0;
+	  width: 100%;
+	  display: none;
+	}
+  
+	.overlay {
+	  width: 100%;
+	}
+  
+	.overlay_panel {
+	  width: 100%;
+	}
+  }
+
